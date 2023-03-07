@@ -7,19 +7,23 @@ package leetcode.easy
  * Важно отметить, что в массиве может быть несколько пропущенных чисел, но мы ищем только k-ое пропущенное число.
  */
 
-fun findKthPositive(arr: IntArray, k: Int) {
+fun findKthMissingNumber(arr: IntArray, k: Int): Int {
 
-    val array: IntArray
+    var leftBorder = 0 // Левая граница
+    var rightBorder = arr.size - 1 // Правая граница
 
-    for (i in arr.indices){
-        if (arr[i]== k){
+    while (leftBorder <= rightBorder) {
 
+        val mid = (leftBorder + rightBorder) / 2 // центр массива
+        val missing = arr[mid] - arr[0] - mid
+
+        if (missing < k) {
+            leftBorder = mid + 1
+        } else {
+            rightBorder = mid - 1
         }
     }
-
+    return arr[leftBorder - 1] + k - (arr[leftBorder - 1] - leftBorder)
 }
 
-
- fun main(args: Array<String>){
-    findKthPositive(arr = intArrayOf(1,2,3,4), k = 2)
- }
+//     findKthMissingNumber(arr = intArrayOf(2,3,4,7,11), k = 2)

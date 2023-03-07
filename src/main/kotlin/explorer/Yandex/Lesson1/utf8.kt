@@ -6,12 +6,10 @@ package explorer.Yandex.Lesson1
  * Если несколько символов встречаются одинаково часто, то можно вывести любой.
  */
 
-fun main() {
 //    variant1()
 //    variant2()
 //    variant3()
 //    variant4()
-}
 
 fun variant1(){
 
