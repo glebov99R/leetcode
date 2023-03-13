@@ -10,7 +10,7 @@ fun twoSum(nums: Array<Int>, target: Int): IntArray {
 
     val map = HashMap<Int, Int>() // Create HashMap
 
-    for (i in nums.indices) {
+    for (i in nums.indices) { // пробегаемся по массиву
 
         val complement = target - nums[i] // complement = target - (текщий значение массива под индексом i)
 

@@ -1,4 +1,4 @@
-package explorer.Yandex.Lesson2
+package explorer.Yandex.`Lesson2(LineSearch)`
 
 import kotlin.math.max
 import kotlin.math.min
@@ -73,11 +73,13 @@ fun prevMaxValue(array: IntArray): Pair<Int, Int> {
 fun minEvenNumber(array: IntArray): Int {
 
     var a = -1
+    var flag = false
 
     for (i in array.indices) {
 
-        if ((array[i] % 2 == 0) && (a == -1 || a > array[i]) ) {
+        if ((array[i] % 2 == 0) && (!flag || a > array[i])) {
             a = array[i]
+            flag = true
         }
     }
     println(a)

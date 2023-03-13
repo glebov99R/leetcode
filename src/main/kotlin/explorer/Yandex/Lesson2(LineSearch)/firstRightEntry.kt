@@ -1,4 +1,4 @@
-package explorer.Yandex.Lesson2
+package explorer.Yandex.`Lesson2(LineSearch)`
 
 /**
  * Дана последовательность чисел длиной N
