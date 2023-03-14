@@ -25,7 +25,7 @@ fun addrook(roworcol: MutableMap<Int,Int>,key: Int){
 fun chess(rookcoolrds: List<Pair<Int, Int>>) {
 
     val rooksinrow = mutableMapOf<Int,Int>() // Славарь сколько ладей стоит в строке
-    val rooksincol = mutableMapOf<Int,Int>() // Славарь сколько ладей стоит в столбце
+    val rooksincol = mutableMapOf<Int,Int>() // Славарь сколько ладей стоит в столбце1
 
     for (coord in rookcoolrds){
         val row = coord.first
