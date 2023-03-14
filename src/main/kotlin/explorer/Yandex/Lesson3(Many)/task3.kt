@@ -48,6 +48,6 @@ fun task4(dictionary: List<String>, text: String): List<Boolean>{
     return ans
 }
 
-fun main(){
-    task4(dictionary = listOf("пока","привт","прощай","давай",), text = "привет")
-}
+//fun main(){
+//    task4(dictionary = listOf("пока","привт","прощай","давай",), text = "привет")
+//}
